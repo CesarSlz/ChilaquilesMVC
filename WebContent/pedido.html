@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Generando orden</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+	<div class="justify-content-center bg-light">
+		<div class="text-center">
+			<h2>Arma tu chilaquiles</h2>	
+			
+			<form action="pedido" method="post">
+				<div>
+					<p><b>Tamaño</b></p>
+					<input type="radio" value="chico" name="rbTamanyo" checked> Chico 
+					<input type="radio" value="mediano "name="rbTamanyo"> Mediano 
+					<input type="radio" value="grande" name="rbTamanyo"> Grande 
+				</div>
+				
+				<div>
+					<p><b>Salsa</b></p>
+					<select name="opSalsa">
+						<option value="verde">Verde</option>
+						<option value="roja">Roja</option>
+						<option value="mixta">Mixta</option>
+						<option value="chipotle">Chipotle</option>
+					</select>
+				</div>
+				
+				<div>
+					<p><b>Consistencia</b></p>
+					<input type="radio" value="blandos" name="rbConsis" checked> Blandos 
+					<input type="radio" value="crujientes" name="rbConsis"> Crujientes 
+				</div>
+				
+				<div>
+					<p><b>Toppings</b></p>
+					<input type="checkbox" name="cbCrema"> Crema 
+					<input type="checkbox" name="cbQueso"> Queso 
+					<input type="checkbox" name="cbQuesoG"> Queso gratinado 
+					<input type="checkbox" name="cbCebolla"> Cebolla 
+					<input type="checkbox" name="cbJitomate"> Jitomate 
+					<input type="checkbox" name="cbLechuga"> Lechuga 
+				</div>
+				
+				<div>
+					<p><b>Extras</b></p>
+					<input type="checkbox" name="cbPollo"> Pollo 
+					<input type="checkbox" name="cbChori"> Chorizo 
+					<input type="checkbox" name="cbFrijoles"> Frijoles 
+					<input type="checkbox" name="cbNopales"> Nopales
+				</div>
+				
+				<div>
+					<p><b>Huevo</b></p>
+					<input type="radio" value="revuelto" name="rbHuevo" checked> Revuelto 
+					<input type="radio" value="estrellado" name="rbHuevo"> Estrellado 
+				</div>
+				
+				<div>
+					<p><b>Bebida</b></p>
+					<select name="opBebida">
+						<option value="jugo">Jugo</option>
+						<option value="cafe">Café</option>
+						<option value="atole">Atole</option>
+						<option value="licuado">Licuado</option>
+						<option value="aguaf">Agua fresca</option>
+						<option value="te">Té</option>
+						<option value="refresco">Refresco</option>
+						<option value="tequila">Tequila</option>
+						<option value="michelada">Michelada</option>
+					</select>
+				</div>
+				
+				<div>
+					<p><b>Tamaño</b></p>
+					<input type="radio" value="chico" name="rbTamanyoB" checked> Chico 
+					<input type="radio" value="mediando" name="rbTamanyoB"> Mediano 
+					<input type="radio" value="grande" name="rbTamanyoB"> Grande 
+				</div>
+				
+				<div>
+					<input class="btn btn-primary" type="submit" value="Pedir">
+				</div>
+				
+			</form>
+
+		</div>
+	</div>
+
+</body>
+</html>
